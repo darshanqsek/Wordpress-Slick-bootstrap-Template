@@ -12,3 +12,18 @@
 Author: the WordPress team
  Text Domain:  twentytwenty-child
 */
+
+.widget li {
+    margin: 0;
+}
+
+@media (min-width: 700px){
+    section {
+       padding: 0 0; 
+   }
+
+}
+section {
+    padding: 0 0;
+    width: 100%;
+}

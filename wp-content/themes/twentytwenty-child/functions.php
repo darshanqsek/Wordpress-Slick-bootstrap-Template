@@ -42,3 +42,42 @@ function add_menu_link_class( $atts, $item, $args ) {
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+
+
+function my_widgets_init() {
+
+    register_sidebar( array(
+        'id'            => 'custom-footer-1',
+        'name'          => 'Footer #01',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );  
+    register_sidebar( array(
+        'id'            => 'custom-footer-2',
+        'name'          => 'Footer #02',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );  
+    register_sidebar( array(
+        'id'            => 'custom-footer-3',
+        'name'          => 'Footer #03',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) ); 
+    register_sidebar( array(
+        'id'            => 'custom-footer-4',
+        'name'          => 'Footer #04',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'my_widgets_init' );
