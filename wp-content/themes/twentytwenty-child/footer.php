@@ -74,6 +74,16 @@
 
 </footer><!-- #site-footer -->
 
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top">
+	<i class="lni-chevron-up"></i>
+</a> 
+
+<!-- Preloader -->
+<div id="preloader">
+	<div class="loader" id="loader-1"></div>
+</div>
+<!-- End Preloader -->
 <?php wp_footer(); ?>
 
 </body>

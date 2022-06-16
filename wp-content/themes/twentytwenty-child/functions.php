@@ -33,7 +33,7 @@ function add_theme_scripts() {
   	wp_enqueue_script( 'main', get_template_directory_uri() . '-child/assets/js/main.js', array ( 'jquery' ), 1.1, true);
  
 }
-add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts',2000 );
 
 function add_menu_link_class( $atts, $item, $args ) {
   if (property_exists($args, 'link_class')) {

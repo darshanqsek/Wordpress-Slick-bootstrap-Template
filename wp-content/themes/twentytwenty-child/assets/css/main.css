@@ -1369,21 +1369,21 @@ button:focus {
 /* ==========================================================================
    Contact section
    ========================================================================== */
-#contact form#contactForm .form-group {
+#contact #contactForm form .form-group {
   margin-bottom: 30px; }
 
-#contact form#contactForm input[type=text], #contact form#contactForm input[type=email] {
+#contact #contactForm form input[type=text], #contact #contactForm form input[type=email] {
   min-height: 52px;
   padding: 0px 0 0 28px;
   font-size: 16px;
   color: #5e629c; }
 
-#contact form#contactForm textarea {
+#contact #contactForm form textarea {
   padding: 15px 0 0 28px;
   font-size: 16px;
   color: #5e629c; }
 
-#contact form#contactForm .form-control:focus {
+#contact #contactForm form .form-control:focus {
   border: 1px solid #3ecf8e;
   outline: none;
   box-shadow: none;
